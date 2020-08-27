@@ -7,6 +7,8 @@ public class LadderMain {
     public static void main(String[] args) {
 
         String names = InputView.inputPlayers();
-        Ladder ladder = new Ladder(names);
+        int height = InputView.inputHeight();
+
+        Ladder ladder = new Ladder(names, height);
     }
 }
