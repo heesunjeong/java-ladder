@@ -12,8 +12,12 @@ public class Player {
 
     private void validate(String name) {
         if (name.isEmpty() || name.length() > 5) {
-            throw new IllegalArgumentException("이름은 1자 이상 5자 이상이어야합니다.");
+            throw new IllegalArgumentException("이름은 1자 이상 5자 이하이여야합니다.");
         }
+    }
+
+    public String getName() {
+        return name;
     }
 
     @Override

@@ -4,12 +4,12 @@ import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class LadderTest {
+public class LineTest {
 
     @Test
     void create() {
-        Ladder ladder = new Ladder(4, 5, () -> false);
+        Line line = new Line(3, () -> false);
 
-        assertThat(ladder).isEqualTo(new Ladder(4, 5, () -> false));
+        assertThat(line).isEqualTo(new Line(3, () -> false));
     }
 }
